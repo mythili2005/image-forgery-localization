@@ -6,7 +6,7 @@ import torchvision.transforms as T
 # Load model
 @st.cache_resource
 def load_model():
-    model = torch.load("model/forgery_model.pt", map_location="cpu")
+    model = torch.load("comofod_deeplabv3_best.pth", map_location="cpu")
     model.eval()
     return model
 
